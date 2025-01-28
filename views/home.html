@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poppa's Pizza</title>
+  <link rel="icon" type="image/png" href="images/pizza.png">
+  <link rel="stylesheet" href="styles/pizza-styles.css">
+</head>
+<body>
+  <div id="main">
+    <header>
+      <img src="images/pizzaGuy.png" alt="pizza guy"/>
+      <h1>Poppa's Pizza</h1>
+      <p>The best pizza ever!</p>
+      <hr>
+      <a id="contact-button" href="#" role="button">Contact Us</a>
+    </header>
+
+    <form action="thankyou" method="get">
+      <fieldset>
+        <legend>Contact Info:</legend>
+        <label>First Name:
+          <input type="text" name="fname" placeholder="Enter your first name">
+        </label>
+        <label>Last Name:
+          <input type="text" name="lname">
+        </label>
+        <label>Email address:
+          <input type="text" name="email">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Pickup or Delivery</legend>
+        <label><input type="radio" name="method" value="Pickup">Pickup</label>
+        <label><input type="radio" name="method" value="delivery">Delivery</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Toppings</legend>
+        <label><input type="checkbox" name="toppings" value="cheese">Cheese</label>
+        <label><input type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+        <label><input type="checkbox" name="toppings" value="mushrooms">Mushrooms</label>
+        <label><input type="checkbox" name="toppings" value="bacon">Bacon</label>
+        <label><input type="checkbox" name="toppings" value="sausage">Sausage</label>
+        <label><input type="checkbox" name="toppings" value="olives">Olives</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pizza Size</legend>
+       
+        <select name="size" id="size" title="select a size">
+          <option value="none">--- Select a Size ---</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </fieldset>
+
+    <button id="orderbutton" type="submit">Place Order</button>
+
+    </form>
+  </div>
+  
+</body>
+</html>
